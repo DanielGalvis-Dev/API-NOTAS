@@ -50,12 +50,10 @@ La API incluye:
 
 2. Instalar dependencias:
 
-npm install express sqlite3 jsonwebtoken bcryptjs cors dotenv
-npm install --save-dev nodemon
+        npm install express sqlite3 jsonwebtoken bcryptjs cors dotenv
+        npm install --save-dev nodemon
 
 3. Correr la API con **npm run dev**
-
-Hora de finalización: 9:40 am
 
 # FRONT
 
@@ -67,23 +65,21 @@ Aplicación Frontend Básica que consume API REST de notas con autenticación JW
 
 ### Estructura del Proyecto
 
-/
-├── index.html # Página principal (panel de notas)
-├── js/
-│ ├── auth.js # Lógica de autenticación (registro/login)
-│ ├── config.js # Configuración de la API
-│ └── notas.js # CRUD de notas (listar, crear, editar, eliminar)
+        /
+        ├── index.html              # Página principal
+        └── js/
+            ├── config.js          # Configuración de la API
+            ├── auth.js            # Autenticación (registro/login/logout)
+            └── notas.js           # CRUD de notas
 
 ### Endpoints
-
-#### Método Endpoint Descripción
-
-     POST	        /auth/register	    Registro de usuario
-     POST	        /auth/login	        Inicio de sesión
-     GET	        /notas	            Obtener todas las notas
-     POST	        /notas	            Crear nueva nota
-     PUT	        /notas/:id	        Actualizar nota
-     DELETE	        /notas/:id	        Eliminar nota
+        Método          Endpoint            Descripción
+        POST	        /auth/register	    Registro de usuario
+        POST	        /auth/login	    Inicio de sesión
+        GET	        /notas	            Obtener todas las notas
+        POST	        /notas	            Crear nueva nota
+        PUT	        /notas/:id	    Actualizar nota
+        DELETE	        /notas/:id	    Eliminar nota
 
 ### Funcionalidades
 
@@ -147,5 +143,8 @@ Daniel Galvis - Prueba técnica
 - Categorías y etiquetas para organizar notas
 
 ### Escalabilidad
-- Migrar a un framework moderno (Angular)
+- Migrar el frontend a un framework moderno (Angular)
+- Migrar el backend a un framework moderno (NestJS)
 - Crear componentes reutilizables
+
+Hora de finalización: 11:40 am
