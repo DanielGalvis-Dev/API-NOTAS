@@ -65,12 +65,12 @@ Aplicación Frontend Básica que consume API REST de notas con autenticación JW
 
 ### Estructura del Proyecto
 
-/
-├── index.html              # Página principal
-└── js/
-    ├── config.js          # Configuración de la API
-    ├── auth.js            # Autenticación (registro/login/logout)
-    └── notas.js           # CRUD de notas
+        /
+        ├── index.html              # Página principal
+        └── js/
+            ├── config.js          # Configuración de la API
+            ├── auth.js            # Autenticación (registro/login/logout)
+            └── notas.js           # CRUD de notas
 
 ### Endpoints
 
