@@ -55,8 +55,6 @@ npm install --save-dev nodemon
 
 3. Correr la API con **npm run dev**
 
-Hora de finalización: 9:40 am
-
 # FRONT
 
 ## Gestión de Notas
@@ -68,11 +66,11 @@ Aplicación Frontend Básica que consume API REST de notas con autenticación JW
 ### Estructura del Proyecto
 
 /
-├── index.html # Página principal (panel de notas)
-├── js/
-│ ├── auth.js # Lógica de autenticación (registro/login)
-│ ├── config.js # Configuración de la API
-│ └── notas.js # CRUD de notas (listar, crear, editar, eliminar)
+├── index.html              # Página principal
+└── js/
+    ├── config.js          # Configuración de la API
+    ├── auth.js            # Autenticación (registro/login/logout)
+    └── notas.js           # CRUD de notas
 
 ### Endpoints
 
@@ -149,3 +147,5 @@ Daniel Galvis - Prueba técnica
 ### Escalabilidad
 - Migrar a un framework moderno (Angular)
 - Crear componentes reutilizables
+
+Hora de finalización: 11:40 am
