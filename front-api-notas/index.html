@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba API Notas</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen p-8">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-xl p-6">
+      <h1 class="text-3xl font-bold mb-6 text-center">
+        Frontend de Prueba — API Notas
+      </h1>
+      <p id="sesion" class="text-center text-gray-600 mb-4"></p>
+
+      <button
+        id="btnLogout"
+        onclick="logout()"
+        class="bg-red-600 text-white px-4 py-2 rounded mb-6 cursor-pointer"
+      >
+        Logout
+      </button>
+
+      <div
+        id="authSection"
+        class="flex flex-col md:flex-row justify-center items-center gap-10 mb-10"
+      >
+        <!-- REGISTRO -->
+        <div class="flex flex-col items-center space-y-3 w-full max-w-xs">
+          <h2 class="text-xl font-semibold">Registro</h2>
+
+          <input
+            id="regUser"
+            placeholder="Usuario"
+            class="border p-2 rounded w-full"
+          />
+
+          <input
+            id="regPass"
+            placeholder="Password"
+            type="password"
+            class="border p-2 rounded w-full"
+          />
+
+          <button
+            onclick="register()"
+            class="bg-blue-500 text-white px-4 py-2 rounded w-full cursor-pointer"
+          >
+            Registrar
+          </button>
+        </div>
+
+        <!-- LINEA DIVISORIA -->
+        <div class="hidden md:block w-px bg-gray-400 h-48"></div>
+        <div class="block md:hidden w-full h-px bg-gray-400 my-4"></div>
+
+        <!-- LOGIN -->
+        <div class="flex flex-col items-center space-y-3 w-full max-w-xs">
+          <h2 class="text-xl font-semibold">Login</h2>
+
+          <input
+            id="logUser"
+            placeholder="Usuario"
+            class="border p-2 rounded w-full"
+          />
+
+          <input
+            id="logPass"
+            placeholder="Password"
+            type="password"
+            class="border p-2 rounded w-full"
+          />
+
+          <button
+            onclick="login()"
+            class="bg-green-500 text-white px-4 py-2 rounded w-full cursor-pointer"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+
+      <!-- CREAR NOTA -->
+      <div class="mb-8" id="crateNotas">
+        <h2 class="text-xl font-semibold mb-4" id="idNota">Crear Nota</h2>
+
+        <div class="flex flex-col md:flex-row flex-wrap gap-2">
+          <input
+            id="tituloNota"
+            placeholder="Título"
+            class="border p-2 rounded w-full md:w-64"
+          />
+          <input
+            id="cuerpoNota"
+            placeholder="Cuerpo"
+            class="border p-2 rounded w-full md:w-64"
+          />
+          <input
+            id="marcaNota"
+            placeholder="Marca"
+            class="border p-2 rounded w-full md:w-64"
+          />
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-2 mt-3">
+          <button
+            id="btnGuardar"
+            onclick="guardarNota()"
+            class="bg-green-500 text-white px-4 py-2 rounded w-full sm:w-auto cursor-pointer"
+          >
+            Guardar
+          </button>
+
+          <button
+            id="btnCancelar"
+            onclick="limpiarCampos()"
+            class="bg-red-500 text-white px-4 py-2 rounded w-full sm:w-auto cursor-pointer"
+          >
+            Cancelar
+          </button>
+        </div>
+      </div>
+
+      <!-- LISTAR -->
+      <div>
+        <!-- <button
+         id="btnObtenerNotas"
+          onclick="obtenerNotas()"
+          class="bg-gray-700 text-white px-4 py-2 rounded mb-4 cursor-pointer"
+        >
+          Obtener Notas
+        </button> -->
+
+        <ul id="listaNotas" class="space-y-2"></ul>
+      </div>
+    </div>
+
+    <!-- JS SEPARADOS -->
+    <script src="./js/config.js"></script>
+    <script src="./js/auth.js"></script>
+    <script src="./js/notas.js"></script>
+  </body>
+</html>
+<!doctype html>
