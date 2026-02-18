@@ -143,7 +143,8 @@ Daniel Galvis - Prueba técnica
 - Categorías y etiquetas para organizar notas
 
 ### Escalabilidad
-- Migrar a un framework moderno (Angular)
+- Migrar el frontend a un framework moderno (Angular)
+- Migrar el backend a un framework moderno (NestJS)
 - Crear componentes reutilizables
 
 Hora de finalización: 11:40 am
