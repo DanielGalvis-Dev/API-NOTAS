@@ -73,15 +73,13 @@ Aplicación Frontend Básica que consume API REST de notas con autenticación JW
             └── notas.js           # CRUD de notas
 
 ### Endpoints
-
-#### Método Endpoint Descripción
-
-     POST	        /auth/register	    Registro de usuario
-     POST	        /auth/login	        Inicio de sesión
-     GET	        /notas	            Obtener todas las notas
-     POST	        /notas	            Crear nueva nota
-     PUT	        /notas/:id	        Actualizar nota
-     DELETE	        /notas/:id	        Eliminar nota
+        Método          Endpoint            Descripción
+        POST	        /auth/register	    Registro de usuario
+        POST	        /auth/login	    Inicio de sesión
+        GET	        /notas	            Obtener todas las notas
+        POST	        /notas	            Crear nueva nota
+        PUT	        /notas/:id	    Actualizar nota
+        DELETE	        /notas/:id	    Eliminar nota
 
 ### Funcionalidades
 
