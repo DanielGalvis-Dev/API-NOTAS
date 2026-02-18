@@ -48,12 +48,13 @@ La API incluye:
 
 1. Clonar el repositorio o descargar el proyecto
 
-2. Instalar dependencias:
+2. Instalar dependencias en API-NOTAS/back-api-notas/
 
         npm install express sqlite3 jsonwebtoken bcryptjs cors dotenv
         npm install --save-dev nodemon
 
-3. Correr la API con **npm run dev**
+3. Correr la API con
+        npm run dev
 
 # FRONT
 
