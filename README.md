@@ -50,8 +50,8 @@ La API incluye:
 
 2. Instalar dependencias:
 
-npm install express sqlite3 jsonwebtoken bcryptjs cors dotenv
-npm install --save-dev nodemon
+        npm install express sqlite3 jsonwebtoken bcryptjs cors dotenv
+        npm install --save-dev nodemon
 
 3. Correr la API con **npm run dev**
 
